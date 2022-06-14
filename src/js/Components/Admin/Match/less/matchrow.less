@@ -1,0 +1,196 @@
+@import '../../../../Global.less';
+
+a {
+    color: @primary-color;
+    text-decoration: none;
+}
+
+.matchrow{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-bottom: .1rem solid #ededed;
+    padding: 0.5rem;
+    transition: background-color 300ms;
+}
+
+.schedulerow:nth-child(2n) {
+    background-color: #f1f3f6;
+}
+
+.matchrow.active{
+    background: rgba(0,164,228,0.05);
+}
+
+
+.matchrow:first-child{
+    border-top: .1rem solid #ededed;
+}
+
+.logo{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.button{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    background: #ededed;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.reset{
+    right: auto;
+    left: 0;
+}
+
+.upperrow {
+    width: 100%;
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.upperrow > span:first-child, .upperrow > span:last-child {
+    width: 8rem;
+}
+
+.upperrow > span:last-child {
+    text-align: right;
+}
+
+.home, .away{
+    display: flex;
+    align-items: center;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    flex: 0 0 5rem;
+}
+
+.cl{
+    padding-left: 0.6rem;
+   font-weight: 500;
+   position: relative;
+}
+
+
+.time .long{
+    display: none;
+}
+
+.home .logo{
+    margin-left: 0.5rem;
+}
+
+.logo + div{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 10rem;
+}
+
+.home{
+    padding: 0 1rem;
+    text-align: right;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    width: calc(~"50% - 6.5rem");
+    justify-content: flex-start;
+}
+
+.score{
+    font-weight: 500;
+    width: 9rem;
+    flex: 0 0 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input{
+        width: 3rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+.away{
+    box-sizing: border-box;
+    padding: 0 1rem;
+    width: calc(~"50% - 4.5rem");
+}
+
+.away .logo{
+    margin-right: 0.5rem;
+}
+
+.success{
+    background: rgba(0,255,0,0.1)!important;
+}
+
+.error{
+    background: rgba(255,0,0,0.3)!important;
+}
+
+@media all and(min-width: 360px){
+    .logo + div{
+        width: 10rem;
+    }
+    .cl .short{
+        display: none;
+    }
+
+    .cl .long{
+        display: inline;
+    }
+    .home, .away {
+        width: calc(~"50% - 4.5rem");
+    }
+}
+
+@media all and(min-width: 480px){
+    .logo + div{
+        width: 100%;
+    }
+   
+}
+
+@media all and(min-width: 600px){
+    .matchrow{
+        padding: 1rem 0.5rem;
+        font-size: 1.6rem;
+    }
+    .home, .away{
+        padding: 0 1.4rem;
+        width: calc(~"50% - 5rem");
+    }
+
+    .score{
+        width: 10rem;
+        flex-basis: 10rem;
+    }
+
+  
+
+    .pitch, .time{
+        width: 8rem;
+        flex-basis: 8rem;
+
+    }
+}

@@ -1,0 +1,175 @@
+@import '../../../Global.less';
+
+a {
+    color: @primary-color;
+    text-decoration: none;
+}
+
+.matchrow{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-bottom: .1rem solid #ededed;
+    padding: 0.5rem;
+}
+
+.schedulerow:nth-child(2n) {
+    background-color: #f1f3f6;
+}
+
+.matchrow.active{
+    background: rgba(0,164,228,0.05);
+}
+
+
+.matchrow:first-child{
+    border-top: .1rem solid #ededed;
+}
+
+.logo{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.upperrow {
+    width: 100%;
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.upperrow > span:first-child, .upperrow > span:last-child {
+    width: 10rem;
+}
+
+.upperrow > span:last-child {
+    text-align: right;
+}
+
+.home, .away{
+    display: flex;
+    align-items: center;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    flex: 0 0 5rem;
+}
+
+.cl{
+    padding-left: 0.6rem;
+   font-weight: 500;
+   position: relative;
+}
+
+
+.time .long{
+    display: none;
+}
+
+.home .logo{
+    margin-left: 0.5rem;
+}
+
+.logo + div{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 10rem;
+}
+
+.home{
+    padding: 0 1rem;
+    text-align: right;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    width: calc(~"50% - 1rem");
+    justify-content: flex-start;
+}
+
+.score{
+    font-weight: 500;
+    width: 2rem;
+    flex: 0 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.away{
+    box-sizing: border-box;
+    padding: 0 1rem;
+    width: calc(~"50% - 1rem");
+}
+
+.away .logo{
+    margin-right: 0.5rem;
+}
+
+.pitch{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    text-align: right;
+    width: 5rem;
+    flex: 0 0 5rem;
+}
+
+@media all and(min-width: 360px){
+    .logo + div{
+        width: 10rem;
+    }
+    .cl .short{
+        display: none;
+    }
+
+    .cl .long{
+        display: inline;
+    }
+    .home, .away {
+        width: calc(~"50% - 1rem");
+    }
+}
+
+@media all and(min-width: 480px){
+    .logo + div{
+        width: 100%;
+    }
+   
+}
+
+@media all and(min-width: 600px){
+    .matchrow{
+        padding: 1rem 0.5rem;
+        font-size: 1.6rem;
+    }
+    .home, .away{
+        padding: 0 1.4rem;
+        width: calc(~"50% - 2rem");
+    }
+
+    .score{
+        width: 4rem;
+        flex-basis: 4rem;
+    }
+
+  
+
+    .pitch, .time{
+        width: 8rem;
+        flex-basis: 8rem;
+
+    }
+}

@@ -1,0 +1,72 @@
+@import '../../Global.less';
+.header{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    border-bottom: 0.1rem solid  @secondary-color;
+}
+
+.info{
+    font-size: 1.4rem; 
+}
+
+.info h1{
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.header .gameDays{
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
+.club{
+    padding: 2rem 0;
+}
+
+
+.logo{
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+
+.team{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid @secondary-color;
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.team >div:first-child{
+    font-weight: 500;
+}
+
+.gameDays{
+    display: flex;
+}
+
+.day{
+    display: block;
+    padding: 1rem 2rem;
+    background: @primary-color;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.longName{
+    display: none;
+}
+
+@media all and(min-width: 600px){
+    .longName{
+        display: inline;
+    }
+    .shortName{
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+[
+	{
+		"id":"ia",
+		"number": "300",
+		"title": "ÍA"
+	},
+	{
+		"id":"fram",
+		"number": "108",
+		"title": "Fram"
+	},
+	{
+		"id":"kari",
+		"number": "297",
+		"title": "Kári"
+	},
+	{
+		"id":"breidablik",
+		"number": "200",
+		"title": "Breiðablik"
+	}
+]

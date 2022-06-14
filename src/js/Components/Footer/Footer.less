@@ -1,0 +1,35 @@
+@import "../../Global.less";
+
+.footer {
+  width: 100%;
+  background: @header-bg-color;
+  border-top: 0.3rem solid @header-border-color;
+  color: #fff;
+  font-size: 1.4rem;
+
+  a {
+    color: #fff;
+  }
+}
+
+.inner {
+  height: 6rem;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+  padding-left: 4rem;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 720px) {
+  .footer {
+    font-size: 1.6rem;
+  }
+  .inner {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1300px) {
+}

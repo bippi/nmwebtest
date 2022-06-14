@@ -1,0 +1,79 @@
+@import '../../Global.less';
+
+.header{
+	z-index: 2;
+	position: fixed;
+	box-sizing: border-box;
+	padding: 0 2rem;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: @header-bg-color;
+	border-bottom: 0.3rem solid @header-border-color;
+}
+
+.inner{
+	height: 4rem;
+	box-sizing: border-box;
+	padding-left: 4rem;
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.logo{
+	position: absolute;
+	width: 100%;
+	max-width: 3rem;
+	left: 0rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.logo img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.burger{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	right: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.header h1{
+	margin: 0;
+	padding: 0;
+	font-size: 1.4rem;
+	line-height: 2.86;
+	text-transform: uppercase;
+	color: @header-color;
+	font-weight: 400;
+}
+
+@media (min-width: 720px){
+	.inner{
+		height: 6rem;
+		padding-left: 6rem;
+	}
+
+	.logo{
+		left: 0;
+		max-width: 5rem;
+	}
+
+	.header h1{
+		line-height: 3;
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 1300px){
+	.burger{
+		display: block;
+	}
+}

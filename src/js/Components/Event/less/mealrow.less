@@ -1,0 +1,30 @@
+@import '../../../Global.less';
+
+.mealrow {
+    position: relative;
+    padding: 1rem;
+    border-bottom: 0.1rem solid #ededed;
+    font-size: 1.2rem;
+    text-align: center;
+    border: .1rem solid @primary-color;
+    background: fade(@primary-color, 20%);
+
+    + .mealrow {
+        border-top-width: 0;
+    }
+}
+
+.upperrow {
+    padding-bottom: .5rem;
+}
+.mealrow_time {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+@media all and(min-width: 600px){
+    .mealrow{
+        padding: 1rem 0.5rem;
+        font-size: 1.6rem;
+    }
+}

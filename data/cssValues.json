@@ -1,0 +1,107 @@
+[
+	{
+		"id": "ia",
+		"colors": {
+			"headerColor" : "#fff",
+			"headerBgColor": "#202020",
+			"headerBorderColor": "#fad100",
+			"burgerColor": "#fff",
+			"navBgColor": "#202020",
+			"navColor": "#fff",
+			"navActiveColor": "#fad100",
+			"navBorderColor": "rgba(255,255,255,0.05)",
+			"bottomNavBgcolor": "#202020",
+			"bottomNavBgActiveColor": "#fad100",
+			"bottomNavColor": "#fff",
+			"bottomNavActiveColor": "#202020",
+			"bottomNavBorderColor": "#202020",
+			"bottomNavBorderActiveColor": "#fad100",
+			"loaderPrimary": "#fad100",
+			"loaderSecondary": "#202020"
+		}
+	},
+	{
+		"id": "kari",
+		"colors": {
+			"headerColor" : "#083b9c",
+			"headerBgColor": "#fff",
+			"headerBorderColor": "#8a2c0c",
+			"burgerColor": "#083b9c",
+			"navBgColor": "#fff",
+			"navColor": "#333",
+			"navActiveColor": "#083b9c",
+			"navBorderColor": "#eee",
+			"bottomNavBgcolor": "#fff",
+			"bottomNavBgActiveColor": "#083b9c",
+			"bottomNavColor": "#083b9c",
+			"bottomNavActiveColor": "#fff",
+			"bottomNavBorderColor": "#083b9c",
+			"bottomNavBorderActiveColor": "#083b9c",
+			"loaderPrimary": "#083b9c",
+			"loaderSecondary": "#fff"
+		}
+	},
+	{
+		"id": "fram",
+		"colors": {
+			"headerColor" : "#175da1",
+			"headerBgColor": "#fff",
+			"headerBorderColor": "#175da1",
+			"burgerColor": "#175da1",
+			"navBgColor": "#fff",
+			"navColor": "#333",
+			"navActiveColor": "#175da1",
+			"navBorderColor": "#eee",
+			"bottomNavBgcolor": "#fff",
+			"bottomNavBgActiveColor": "#175da1",
+			"bottomNavColor": "#175da1",
+			"bottomNavActiveColor": "#fff",
+			"bottomNavBorderColor": "#175da1",
+			"bottomNavBorderActiveColor": "#175da1",
+			"loaderPrimary": "#175da1",
+			"loaderSecondary": "#fff"
+		}
+	},
+	{
+		"id": "ubk",
+		"colors": {
+			"headerColor" : "#0e5743",
+			"headerBgColor": "#fff",
+			"headerBorderColor": "#0e5743",
+			"burgerColor": "#0e5743",
+			"navBgColor": "#0e5743",
+			"navColor": "#fff",
+			"navActiveColor": "#bf0028",
+			"navBorderColor": "rgba(255,255,255,0.1)",
+			"bottomNavBgcolor": "#fff",
+			"bottomNavBgActiveColor": "#0e5743",
+			"bottomNavColor": "#0e5743",
+			"bottomNavActiveColor": "#fff",
+			"bottomNavBorderColor": "#0e5743",
+			"bottomNavBorderActiveColor": "#0e5743",
+			"loaderPrimary": "#0e5743",
+			"loaderSecondary": "#fff"
+		}
+	},
+	{
+		"id": "breidablik",
+		"colors": {
+			"headerColor" : "#0e5743",
+			"headerBgColor": "#fff",
+			"headerBorderColor": "#0e5743",
+			"burgerColor": "#0e5743",
+			"navBgColor": "#0e5743",
+			"navColor": "#fff",
+			"navActiveColor": "#bf0028",
+			"navBorderColor": "rgba(255,255,255,0.1)",
+			"bottomNavBgcolor": "#fff",
+			"bottomNavBgActiveColor": "#0e5743",
+			"bottomNavColor": "#0e5743",
+			"bottomNavActiveColor": "#fff",
+			"bottomNavBorderColor": "#0e5743",
+			"bottomNavBorderActiveColor": "#0e5743",
+			"loaderPrimary": "#0e5743",
+			"loaderSecondary": "#fff"
+		}
+	}
+]

@@ -1,0 +1,76 @@
+@import '../../Global.less';
+.sidebar{
+	position: fixed;
+	left: 0;
+	top: 4rem;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background: rgba(0,0,0,0);
+	transition: background 400ms, z-index 0ms 500ms;
+
+}
+
+.menuWrapper{
+	width: 27rem;
+	background: @nav-bg-color;
+	right: 0;
+	position: absolute;
+	height: 100%;
+	overflow: auto;
+	transition: transform 400ms;
+}
+
+
+.menu{
+	list-style: none;
+	margin: 0;
+	padding: 0 0 5rem;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.menu li{
+	border-bottom: 0.1rem solid @nav-border-color;
+}
+.menu li a{
+	display: block;
+	padding: 1.5rem 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: @nav-color;
+}
+
+.menu li a.activeItem{
+	color: @nav-active-color;
+}
+
+.burger{
+	left: 0;
+	display: none;
+}
+
+.sidebarClose{
+	
+}
+@media (min-width: 720px){
+	.sidebar{
+		top: 6rem;
+	}
+}
+
+@media (max-width: 1300px){
+	.sidebarOpen{
+		background: rgba(0,0,0,0.3);
+		z-index: 3;
+		transition: background 400ms, z-index 0ms 0ms;
+	}
+	
+	.menuWrapper{
+		transform: translateX(100%);
+	}
+
+	.sidebarOpen .menuWrapper{
+		transform: translateX(0);
+	}
+}
