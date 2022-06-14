@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'nmwebbippi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0602A82BB2D24D70B8CE1683EF362F40 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4DFCDB9E80C14624B9252B53D4817074 }}
           package: .
